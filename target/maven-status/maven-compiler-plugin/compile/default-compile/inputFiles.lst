@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/CORSInterceptor.java
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/SpringWebAppInitializer.java
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/Controllers/PagesController.java
@@ -13,19 +12,3 @@
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/DAO/PostBlogDAO.java
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/DAOImpl/PostBlogDAOImpl.java
 /Users/labredes14/IngSoftBlog/src/main/java/co/utb/softeng/blog/Service/PostBlogService.java
-=======
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/ServiceImpl/PostBlogServiceImpl.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/CORSInterceptor.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/Controllers/PostController.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/Entidades/Post.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/security/SecurityWebApplicationInitializer.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/DAO/PostBlogDAO.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/security/CsrfHeaderFilter.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/Controllers/AuthController.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/ApplicationContextConfig.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/Controllers/PagesController.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/Service/PostBlogService.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/security/SecurityConfiguration.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/DAOImpl/PostBlogDAOImpl.java
-/Users/LabRedes15/Desktop/IngSoftBlog/src/main/java/co/utb/softeng/blog/config/SpringWebAppInitializer.java
->>>>>>> origin/master
