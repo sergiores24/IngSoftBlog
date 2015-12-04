@@ -1,0 +1,14 @@
+co\utb\softeng\blog\ServiceImpl\PostBlogServiceImpl.class
+co\utb\softeng\blog\DAOImpl\PostBlogDAOImpl.class
+co\utb\softeng\blog\config\security\CsrfHeaderFilter.class
+co\utb\softeng\blog\config\CORSInterceptor.class
+co\utb\softeng\blog\config\SpringWebAppInitializer.class
+co\utb\softeng\blog\Controllers\PagesController.class
+co\utb\softeng\blog\config\ApplicationContextConfig.class
+co\utb\softeng\blog\config\security\SecurityWebApplicationInitializer.class
+co\utb\softeng\blog\Controllers\AuthController.class
+co\utb\softeng\blog\config\security\SecurityConfiguration.class
+co\utb\softeng\blog\Service\PostBlogService.class
+co\utb\softeng\blog\Entidades\Post.class
+co\utb\softeng\blog\DAO\PostBlogDAO.class
+co\utb\softeng\blog\Controllers\PostController.class
