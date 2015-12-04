@@ -42,8 +42,13 @@ public class PostBlogServiceImpl implements PostBlogService{
     }
 
     @Override
-    public void publicarOeditarpost(Post post) {
-        postDAO.publicarOeditarpost(post);
+    public void publicarpost(Post post) {
+        postDAO.publicarpost(post);
+    }
+    
+    @Override
+    public void editarpost(Post post) {
+        postDAO.editarpost(post);
     }
 
     @Override

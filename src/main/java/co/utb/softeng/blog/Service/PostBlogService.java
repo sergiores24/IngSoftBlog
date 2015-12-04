@@ -16,7 +16,8 @@ public interface PostBlogService {
     public Post getPostbytitulo(String titulo);
     public Post getPostbykeywords(String keywords);
     //public Post getPostbycuerpo(String cuerpo);
-    public void publicarOeditarpost(Post post);
+    public void publicarpost(Post post);
+    public void editarpost(Post post);
     public void eliminarpost(Long Id);
     
 }

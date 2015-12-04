@@ -30,17 +30,8 @@ controllerModule.controller('adminController', ['$scope', '$uibModal', '$locatio
             });
         };
         
-        $scope.editPost = function (post) {
-            $uibModal.open({
-                templateUrl: 'editPostModal',
-                controller: 'adminController.editPostModal',
-                size: 'md'
-            }, post).result.then(function (m) {
-                postService.publicarPost(m)
-                        .then(function () {
-                            $scope.getAllPosts();
-                        });
-            });
+        $scope.editPost = function (id) {
+            $location.path('/editar/' + id);
         };
         
         $scope.eliminarPost= function(algo){
@@ -55,19 +46,6 @@ controllerModule.controller('adminController', ['$scope', '$uibModal', '$locatio
     }]);
 
 controllerModule.controller('adminController.addPostModal', ['$scope', '$modalInstance', function ($scope, $modalInstance) {
-        $scope.post = {};
-
-        $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
-        };
-
-        $scope.ok = function () {
-
-            $modalInstance.close($scope.post);
-        };
-    }]);
-
-controllerModule.controller('adminController.editPostModal', ['$scope', '$modalInstance', function ($scope, $modalInstance) {
         $scope.post = {};
 
         $scope.cancel = function () {

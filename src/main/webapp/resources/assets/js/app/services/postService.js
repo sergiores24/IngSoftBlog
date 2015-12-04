@@ -23,7 +23,6 @@ servicesModule.factory('postService', ['$http', function ($http) {
                 return $http.post(this.apiUrl + 'post/', post);
             },
             eliminarPost: function (post){
-                console.log("eliminar post object", post);
                 return $http.delete(this.apiUrl + 'post/' +"eliminar/"+ post.id);
             }
         };

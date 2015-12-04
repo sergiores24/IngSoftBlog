@@ -72,10 +72,13 @@ public class PostBlogDAOImpl implements PostBlogDAO {
     }*/
 
     @Override
-    public void publicarOeditarpost(Post post) {
-        if(post.geteditado()==0){
-            post.setfechacreacion(new Date());
-        }
+    public void publicarpost(Post post) {
+        post.setfechacreacion(new Date());
+        getSession().saveOrUpdate(post);
+    }
+    
+    @Override
+    public void editarpost(Post post) {
         getSession().saveOrUpdate(post);
     }
 

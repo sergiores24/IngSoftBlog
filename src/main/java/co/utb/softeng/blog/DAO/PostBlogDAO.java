@@ -19,7 +19,8 @@ public interface PostBlogDAO {
     public Post getbytitulo(String titulo);
     public Post getbykeywords(String keywords);
     //public Post getbycuerpo(String cuerpo);
-    public void publicarOeditarpost(Post post);
+    public void publicarpost(Post post);
+    public void editarpost(Post post);
     public void eliminarpost(Long Id);
 
 }

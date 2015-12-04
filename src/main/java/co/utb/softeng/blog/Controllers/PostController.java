@@ -42,14 +42,14 @@ public class PostController {
     @Secured("ROLE_EDITOR")
     @RequestMapping(value={"/", ""}, method = RequestMethod.PUT)
     public @ResponseBody Post publicarPost(@RequestBody Post post) {
-        postService.publicarOeditarpost(post);
+        postService.publicarpost(post);
         return post;
     }
     
     @Secured("ROLE_EDITOR")
     @RequestMapping(value={"/", ""}, method = RequestMethod.POST)
     public @ResponseBody Post editarPost(@RequestBody Post post) {
-        postService.publicarOeditarpost(post);
+        postService.editarpost(post);
         return post;
     }
     

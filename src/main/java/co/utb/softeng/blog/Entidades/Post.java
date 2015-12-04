@@ -33,7 +33,6 @@ public class Post implements Serializable {
     private String cuerpo;
     @Temporal(value=TemporalType.DATE)
     private Date fechacreacion;
-    private int editado=0;
 
     public Long getid() {
         return id;
@@ -75,13 +74,5 @@ public class Post implements Serializable {
 
     public void setkeywords(String keywords) {
         this.keywords = keywords;
-    }
-    
-    public int geteditado(){
-        return editado;
-    }
-    
-    public void geteditado(int e){
-        this.editado=e;
     }
 }

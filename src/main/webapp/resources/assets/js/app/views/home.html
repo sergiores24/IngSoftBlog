@@ -6,15 +6,15 @@
     </div>
     <div class="row">
 
-        <div class="col-lg-8 list-group">
+        <div class="col-md-8 list-group">
 
-            <div ng-repeat="post in posts | orderBy='-fechacreacion' |limitTo='10' " class="list-group-item">
+            <div ng-repeat="post in posts | orderBy:'-fechacreacion' |limitTo:10 " class="list-group-item">
                 <div class="row-action-primary">
                     <i class="mdi-action-theaters"></i>
                 </div>
                 <div class="row-content">
                     <div class="least-content">{{post.fechacreacion}}</div>
-                    <h2><a href="#/post/{{post.Id}}">{{post.titulo}}:</a></h2>
+                    <h2><a href="#/post/{{post.id}}">{{post.titulo}}:</a></h2>
                     <textarea readonly="readonly"  style="resize:none" cols="120" rows="10">{{post.cuerpo}}</textarea>
                     <hr>
                     <p><small>Palabras claves: {{post.keywords}}</small></p>

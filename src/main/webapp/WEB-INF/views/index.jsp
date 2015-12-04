@@ -124,4 +124,6 @@ and open the template in the editor.
 <script src="assets/js/app/controllers/navbarController.js"></script>
 <script src="assets/js/app/controllers/loginController.js"></script>
 <script src="assets/js/app/controllers/adminController.js"></script>
+<script src="assets/js/app/controllers/postController.js"></script>
+<script src="assets/js/app/controllers/editController.js"></script>
 <script src="assets/js/app/app.js"></script>
