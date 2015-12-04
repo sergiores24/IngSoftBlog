@@ -1,0 +1,44 @@
+<div>
+    <div class="container">
+        <div class="col-lg-12">
+            <h1>Publicaciones:</h1>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-lg-8 list-group">
+
+            <div ng-repeat="post in posts | orderBy='-fechacreacion' |limitTo='10' " class="list-group-item">
+                <div class="row-action-primary">
+                    <i class="mdi-action-theaters"></i>
+                </div>
+                <div class="row-content">
+                    <div class="least-content">{{post.fechacreacion}}</div>
+                    <h2><a href="#/post/{{post.Id}}">{{post.titulo}}:</a></h2>
+                    <textarea readonly="readonly"  style="resize:none" cols="120" rows="10">{{post.cuerpo}}</textarea>
+                    <hr>
+                    <p><small>Palabras claves: {{post.keywords}}</small></p>
+                </div>
+                <div class="list-group-separator"></div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+                </div>
+            </div>
+
+    </div>
