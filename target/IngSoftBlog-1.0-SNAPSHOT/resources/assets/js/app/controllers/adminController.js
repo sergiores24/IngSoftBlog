@@ -31,8 +31,9 @@ controllerModule.controller('adminController', ['$scope', '$uibModal', '$locatio
         };
         
         
-        $scope.eliminarPost= function(post){
-            postService.eliminarPost(post.Id)
+        $scope.eliminarPost= function(algo){
+            console.log("eliminar post object", algo);
+            postService.eliminarPost(algo)
                     .then(function(){
                         $scope.getAllPost();
                     });

@@ -9,7 +9,7 @@
 
 var IngSoftBlog = angular.module("IngSoftBlog", [
     'ngRoute',
-    'ui.bootstrap',
+    'ui.bootstrap',,
     'ui.grid',
     'ingsoftblogServices',
     'ingsoftblogControllers',

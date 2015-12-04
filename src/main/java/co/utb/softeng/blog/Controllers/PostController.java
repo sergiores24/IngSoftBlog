@@ -54,9 +54,8 @@ public class PostController {
     }
     
     @Secured("ROLE_EDITOR")
-    @RequestMapping(value = "/",method = RequestMethod.DELETE) 
-    public @ResponseBody Post deleteMovie(@RequestBody Post post) {
-        postService.eliminarpost(post.getId());
-        return post;          
+    @RequestMapping(value = "/eliminar/{id}",method = RequestMethod.DELETE) 
+    public @ResponseBody void deleteMovie(@PathVariable Long id) {
+        postService.eliminarpost(id);
     }
 }

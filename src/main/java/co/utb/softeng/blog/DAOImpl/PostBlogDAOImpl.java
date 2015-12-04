@@ -82,7 +82,7 @@ public class PostBlogDAOImpl implements PostBlogDAO {
     @Override
     public void eliminarpost(Long Id) {
         Post post = new Post();
-        post.setId(Id);
+        post.setid(Id);
         getSession().delete(post);
     }
     

@@ -23,9 +23,10 @@ import javax.persistence.TemporalType;
 @Entity
 @Table (name = "POST")
 public class Post implements Serializable {
+    
     @Id
     @GeneratedValue
-    private Long Id;
+    private Long id;
     private String titulo;
     private String keywords;
     @Lob
@@ -34,12 +35,12 @@ public class Post implements Serializable {
     private Date fechacreacion;
     private int editado=0;
 
-    public Long getId() {
-        return Id;
+    public Long getid() {
+        return id;
     }
 
-    public void setId(Long Id) {
-        this.Id = Id;
+    public void setid(Long id) {
+        this.id = id;
     }
 
     public String gettitulo() {
