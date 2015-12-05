@@ -5,4 +5,4 @@ Este es el proyecto del curso Ingeniería de Software 1 "Blog Application" entre
 
 En colaboración con el tutor del curso, Msc William Caicedo-Torres
 
-PRODUCT BACKLOG DEL PROYECTO --> https://goo.gl/o6fIsI
+PRODUCT BACKLOG DEL PROYECTO --> https://goo.gl/SzWdAE
