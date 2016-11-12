@@ -8,8 +8,8 @@
 
 var controllerModule = angular.module('ingsoftblogControllers');
 
-controllerModule.controller('homeController', ['$scope', 'postService', '_', 
-    function ($scope, postService, _) {
+controllerModule.controller('homeController', ['$scope', 'postService', 
+    function ($scope, postService) {
         $scope.posts = [];
 
         $scope.getAllPosts = function () {
@@ -21,8 +21,3 @@ controllerModule.controller('homeController', ['$scope', 'postService', '_',
         
         $scope.getAllPosts();
     }]);
-
-
-
-
-

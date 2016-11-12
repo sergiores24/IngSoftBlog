@@ -19,8 +19,8 @@ var IngSoftBlog = angular.module("IngSoftBlog", [
 ]);
 
 
-IngSoftBlog.config(['$routeProvider','$httpProvider',
-    function($routeProvider, $httpProvider) {
+IngSoftBlog.config(['$routeProvider','$locationProvider',
+    function($routeProvider, $locationProvider) {
         $routeProvider.
                 when('/editor', {
                     templateUrl: 'assets/js/app/views/admin.html',
@@ -41,7 +41,7 @@ IngSoftBlog.config(['$routeProvider','$httpProvider',
                     redirectTo: '/'
                 });
                 
-                $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+                $locationProvider.html5Mode(true);
 }])
         .run(['$rootScope','$location','authService', function ($rootScope, $location, authService) {
             $rootScope.$on("$routeChangeStart", function (event, next, current) {

@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html ng-app="IngSoftBlog">
    <head>
-
+    <base href="/IngSoftBlog/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,16 +44,16 @@ and open the template in the editor.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#/">IngSoftBlog</a>
+                <a class="navbar-brand" href={{apiUrl}}>IngSoftBlog</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse collapse navbar-responsive-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#/">Inicio</a>
+                        <a href={{apiUrl}}>Inicio</a>
                     </li>
                     <li>
-                        <a href="#/editor/">Editor</a>
+                        <a href={{apiUrl}}editor/>Editor</a>
                     </li>
                     <li ng-show="loggedIn"><a href="" ng-click="logout()">Logout</a></li>
                     <li ng-show="!loggedIn"><a href="" ng-click="login()">Login</a></li>
